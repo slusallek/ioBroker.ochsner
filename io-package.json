@@ -1,0 +1,107 @@
+{
+	"common": {
+		"name": "ochsner",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "Adapter to Ochsner Heatpump",
+		"titleLang": {
+			"en": "Adapter to Ochsner Heatpump",
+			"de": "Adapter to Ochsner Heatpump",
+			"ru": "Adapter to Ochsner Heatpump",
+			"pt": "Adapter to Ochsner Heatpump",
+			"nl": "Adapter to Ochsner Heatpump",
+			"fr": "Adapter to Ochsner Heatpump",
+			"it": "Adapter to Ochsner Heatpump",
+			"es": "Adapter to Ochsner Heatpump",
+			"pl": "Adapter to Ochsner Heatpump",
+			"zh-cn": "Adapter to Ochsner Heatpump"
+		},
+		"desc": {
+			"en": "Allows to monitor and control an Ochsner heat pump",
+			"de": "Allows to monitor and control an Ochsner heat pump",
+			"ru": "Allows to monitor and control an Ochsner heat pump",
+			"pt": "Allows to monitor and control an Ochsner heat pump",
+			"nl": "Allows to monitor and control an Ochsner heat pump",
+			"fr": "Allows to monitor and control an Ochsner heat pump",
+			"it": "Allows to monitor and control an Ochsner heat pump",
+			"es": "Allows to monitor and control an Ochsner heat pump",
+			"pl": "Allows to monitor and control an Ochsner heat pump",
+			"zh-cn": "Allows to monitor and control an Ochsner heat pump"
+		},
+		"authors": [
+			"Philipp Slusallek <slusallek@dfki.de>"
+		],
+		"keywords": [
+			"ochsner",
+			"heatpump"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "ochsner.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/slusallek/ioBroker.ochsner/main/admin/ochsner.png",
+		"readme": "https://github.com/slusallek/ioBroker.ochsner/blob/main/README.md",
+		"loglevel": "info",
+		"mode": "daemon",
+		"type": "climate-control",
+		"compact": true,
+		"connectionType": "local",
+		"dataSource": "poll",
+		"adminUI": {
+			"config": "json"
+		},
+		"dependencies": [
+			{
+				"js-controller": ">=3.3.22"
+			}
+		],
+		"globalDependencies": [
+			{
+				"admin": ">=5.1.13"
+			}
+		]
+	},
+	"native": {
+		"host": "",
+		"account": "",
+		"password": ""
+	},
+	"objects": [],
+	"instanceObjects": [
+		{
+			"_id": "info",
+			"type": "channel",
+			"common": {
+				"name": "Information"
+			},
+			"native": {}
+		},
+		{
+			"_id": "info.connection",
+			"type": "state",
+			"common": {
+				"role": "indicator.connected",
+				"name": "Device or service connected",
+				"type": "boolean",
+				"read": true,
+				"write": false,
+				"def": false
+			},
+			"native": {}
+		}
+	]
+}

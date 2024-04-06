@@ -1,0 +1,21 @@
+{
+	"i18n": true,
+	"type": "panel",
+	"items": {
+		"host": {
+			"type": "text",
+			"label": "Ochsner web2com address",
+			"newLine": true
+		},
+		"account": {
+			"type": "text",
+			"label": "Account name",
+			"newLine": true
+		},
+		"password": {
+			"type": "text",
+			"label": "PW for account",
+			"newLine": true
+		}
+	}
+}
